@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "namespace": "com.kubetrade.avro.marketdata",
+  "name": "SettlementPrice",
+  "fields": [
+    {
+      "name": "date",
+      "type": {
+        "type": "int",
+        "logicalType": "date"
+      }
+    },
+    {
+      "name": "executionVenueCode",
+      "type": "string"
+    },
+    {
+      "name": "symbol",
+      "type": "string"
+    },
+    {
+      "name": "price",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 20,
+        "scale": 10
+      }
+    }
+  ]
+}

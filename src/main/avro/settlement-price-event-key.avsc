@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "namespace": "com.kubetrade.avro.marketdata",
+  "name": "SettlementPriceEventKey",
+  "fields": [
+    {
+      "name": "executionVenueCode",
+      "type": "string"
+    },
+    {
+      "name": "symbol",
+      "type": "string"
+    }
+  ]
+}

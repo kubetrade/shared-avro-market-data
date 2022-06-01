@@ -1,0 +1,10 @@
+{
+  "type": "enum",
+  "namespace": "com.kubetrade.avro.marketdata",
+  "name": "EventType",
+  "symbols": [
+    "CREATE",
+    "UPDATE",
+    "DELETE"
+  ]
+}

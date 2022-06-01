@@ -1,0 +1,26 @@
+{
+  "type": "record",
+  "namespace": "com.kubetrade.avro.marketdata",
+  "name": "SettlementPriceEvent",
+  "fields": [
+    {
+      "name": "eventId",
+      "type": "string"
+    },
+    {
+      "name": "eventType",
+      "type": "com.kubetrade.avro.marketdata.EventType"
+    },
+    {
+      "name": "settlementPrice",
+      "type": "com.kubetrade.avro.marketdata.SettlementPrice"
+    },
+    {
+      "name": "eventTimestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-micros"
+      }
+    }
+  ]
+}
